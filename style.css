@@ -1,0 +1,87 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}  
+header {
+    background-image: url('img/pn.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+    position: relative;
+}  
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+img.img1 {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}  
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}  
+
+ol {
+        list-style: none; 
+        counter-reset: my-counter; 
+    }
+
+    li {
+        counter-increment: my-counter; 
+        margin-bottom: 10px; 
+    }
+
+    li::before {
+        content: counter(my-counter) ". ";
+        font-weight: bold; 
+    }
+
+ul img {
+    width: 200px; 
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+ul p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+@media only screen and (max-width: 600px) {
+    
+    header {
+        padding: 30px;
+    }
+
+    main {
+        padding: 10px;
+    }
+}
